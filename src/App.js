@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import './App.css';
 
-const finalSpaceCharacters = [
+const pokemonCharacters = [
   {
     id: 'bulbasaur',
     name: 'Bulbasaur',
@@ -31,7 +31,7 @@ const finalSpaceCharacters = [
 ]
 
 function App() {
-  const [characters, updateCharacters] = useState(finalSpaceCharacters);
+  const [characters, updateCharacters] = useState(pokemonCharacters);
 
   function handleOnDragEnd(result) {
     if (!result.destination) return;
